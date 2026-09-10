@@ -1,0 +1,8 @@
+
+
+<% if Current.user%>
+<div class="nav">
+    <span><%= Current.user.email_address%></span>
+      <%= button_to "Logout",session_path,method: :delete%>
+</div>
+<%end%>
